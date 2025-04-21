@@ -1,0 +1,22 @@
+﻿@using TiyatroBİLETİM.Models;
+@Model IEnumerable<Model>
+    @{
+        ViewBag.Title = "Oyunlar";
+
+    }
+
+
+    <div class="row">
+        <div class="col-md-3 pb5">
+
+            @Html.Action("GetKategois", "Home")
+         </div>
+            <div class="container pb-5">
+
+                @Html.Partial("_OyunlarListe")
+
+
+            </div>
+
+
+        </div>

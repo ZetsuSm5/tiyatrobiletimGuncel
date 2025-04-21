@@ -1,0 +1,32 @@
+﻿@using TiyatroBİLETİM.Models;
+@Model IEnumerable<Model>
+
+    <div class="row">
+
+        @foreach (var Oyunlars in Model)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/fotograf/@Oyunlars.Image" class="card-img-top" alt="@Oyunlars.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="Home/FilmDetayları/@Oyunlars.Id">@Oyunlars.Name</a>
+
+                        </h5>
+
+                        <p class="card-text">@Oyunlars.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">@Oyunlars.Price</small>
+                        <a href="Home/FilmDetayları/@Oyunlars.Id" class="btn btn-primary btn-xs float-right">
+                            Bilet Al
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        }
+
+
+    </div>

@@ -1,0 +1,26 @@
+﻿@using TiyatroBİLETİM.Models;
+@Model IEnumerable<Model>
+    @{
+        ViewBag.Title = "Index";
+    }
+
+
+    <div class="jumbotron">
+
+        <div class="container">
+            <h5 class="display-4">Hoşgeldiniz!</h5>
+            <p class="lead">Sitemize Hoşgeldiniz.Bu site size umarım aradığınız Tiyatro keyfini sunar</p>
+            <hr class="my-4">
+            <p>Galerimize Göz atın</p>
+            <a class="btn btn-primary btn-lg" href="/Home/Oyunlar" role="button">Filmlerimiz</a>
+            <link rel="stylesheet" href="~/Gise/css/style.css">
+        </div>
+    </div>
+
+
+    <div class="container pb-5">
+
+        @Html.Partial("_OyunlarListe")
+
+
+    </div>

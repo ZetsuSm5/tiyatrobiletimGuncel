@@ -1,0 +1,17 @@
+﻿@model IEnumerable<TiyatroBİLETİM.Enity.Kategori>
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <a href="~/Home/Oyunlar">Tüm Kategoriler</a>
+
+    </li>
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item ">
+            <a href="~/Home/Oyunlar/@item.Id">@item.Name</a>
+
+        </li>
+    }
+
+</ul>
+

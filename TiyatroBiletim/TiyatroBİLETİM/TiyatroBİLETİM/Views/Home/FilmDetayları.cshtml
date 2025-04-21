@@ -1,0 +1,107 @@
+﻿@using TiyatroBİLETİM.Enity;
+@Model Oyunlarim
+
+    @{
+        ViewBag.Title = "FilmDetayları";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+
+    }
+
+
+
+
+    <div class="container pb-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <h1> @Model.Name </h1>
+                    <h6>26 nisan Cumartesi günü saat @Model.saat</h6>
+
+                </div>
+
+                <div class="row mt-3 ">
+                    <div class="col-md-12">
+                        <span class="badge badge-primary">Yer Var</span>
+                        <span class="product-number">012548</span>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6 ">
+                            <img src="~/fotograf/@Model.Image" class="img-responsive w-50">
+                        </div>
+                        <div id="description">
+                            <h4>Açıklama</h4>
+                            <h6>
+                                @Model.Description
+                            </h6>
+                        </div>
+                        <div class="container">
+
+                            <div class="card-deck mb-3 text-center">
+                                <div class="card mb-4 shadow-sm">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Ankara Devlet Tiyatrosu</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1 class="card-title pricing-card-title">@Model.Price/TL</h1>
+                                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sepete Ekle</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 shadow-sm">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">Beşiktaş Kültür Merkezi</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1 class="card-title pricing-card-title">@Model.Price/TL</h1>
+                                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sepete Ekle</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 shadow-sm">
+                                    <div class="card-header">
+                                        <h4 class="my-0 font-weight-normal">İzmir Halk Salonu Merkezi</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1 class="card-title pricing-card-title">@Model.Price/TL</h1>
+                                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sepete Ekle</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tür</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Oyuncular</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Beğenilme</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Romantizm,Macera,Dram</div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Zeki Demir kubus,Acdar,hadise,acun</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Son derece olumlu</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+

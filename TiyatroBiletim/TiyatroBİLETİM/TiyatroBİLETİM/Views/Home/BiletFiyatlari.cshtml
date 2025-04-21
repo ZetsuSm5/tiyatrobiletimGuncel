@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "BiletFiyatlari";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Fiyatlandırma</h1>
+    <p class="lead">Bu Gördüğünüz Bilet Paketleri Sadece Salondan alınabilir.Fiyatlandırma Değisen Ekonomiye Göre Değisir</p>
+</div>
+
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Tekli Bilet</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">50TL <small class="text-muted"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Patlamıs Mısır</li>
+                    <li>Kola</li>
+                    <li>Yer</li>
+
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='/Home/Oyunlar'">Al</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Cift Bilet</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">100TL <small class="text-muted"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Büyük Boy Mısır</li>
+                    <li>İkili Kola</li>
+                    <li>İki kisilik Yer</li>
+
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='/Home/Oyunlar'">Al</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Aile Bilet </h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">380TL <small class="text-muted"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>İkili Büyük Boy Mısır</li>
+                    <li>Beşli Kola</li>
+                    <li>Beş Kişilik Yer</li>
+
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='/Home/Oyunlar'">Al</button>
+
+            </div>
+        </div>
+    </div>
+
+    
+</div>
